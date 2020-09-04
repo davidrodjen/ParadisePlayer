@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:layout_constraintEnd_toStartOf="@+id/goToArtistHeart"
+        app:layout_constraintStart_toStartOf="@+id/goToArtistHeart">
+
+        <Button
+            android:id="@+id/goToArtist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="92dp"
+            android:text="@string/go_to_artist"
+            app:layout_constraintBaseline_toBaselineOf="@+id/paradiseBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/paradiseBtn" />
+
+        <TextView
+            android:id="@+id/navText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="#0A668F"
+            android:fadingEdge="horizontal|vertical"
+            android:text="@string/genre"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/paradiseBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="36dp"
+            android:background="@drawable/button_bg_round"
+            android:padding="15dp"
+            android:text="@string/paradise_lights"
+            app:layout_constraintEnd_toStartOf="@+id/goToArtist"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/navText" />
+
+        <Button
+            android:id="@+id/doveDiveBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="37dp"
+            android:background="@drawable/button_bg_roundlight"
+            android:padding="15dp"
+            android:text="@string/dove_dive"
+            app:layout_constraintEnd_toStartOf="@+id/goToArtistDove"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/paradiseBtn" />
+
+        <Button
+            android:id="@+id/goToArtistDove"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="91dp"
+            android:text="@string/go_to_artist"
+            app:layout_constraintBaseline_toBaselineOf="@+id/doveDiveBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/doveDiveBtn" />
+
+        <Button
+            android:id="@+id/liteHeartBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="41dp"
+            android:background="@drawable/button_bg_rounddark"
+            android:padding="15dp"
+            android:text="@string/lite_heart"
+            app:layout_constraintEnd_toStartOf="@+id/goToArtistHeart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doveDiveBtn" />
+
+        <Button
+            android:id="@+id/goToArtistHeart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="89dp"
+            android:text="@string/go_to_artist"
+            app:layout_constraintBaseline_toBaselineOf="@+id/liteHeartBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/liteHeartBtn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
